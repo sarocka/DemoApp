@@ -68,10 +68,10 @@
                 android:id="@+id/btn_signIn"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="30dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/greenLight"
                 android:text="Sign In"
                 android:textAllCaps="false"
-                android:backgroundTint="@color/greenLight"
                 app:layout_constraintBottom_toTopOf="@id/btn_signUp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -81,25 +81,25 @@
                 android:id="@+id/btn_signUp"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="40dp"
-                android:text="Sign Up"
-                android:textColor="@color/greenDark"
-                android:textAllCaps="false"
+                android:layout_marginBottom="30dp"
                 android:backgroundTint="@color/white"
-                app:strokeColor="@color/greenDark"
-                app:strokeWidth="2dp"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textColor="@color/greenDark"
                 app:layout_constraintBottom_toTopOf="@id/relativeLayout"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btn_signIn">
-            </com.google.android.material.button.MaterialButton>
+                app:layout_constraintTop_toBottomOf="@+id/btn_signIn"
+                app:strokeColor="@color/greenDark"
+                app:strokeWidth="2dp"></com.google.android.material.button.MaterialButton>
 
             <RelativeLayout
                 android:id="@+id/relativeLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintBottom_toTopOf="@+id/tableRow"
                 app:layout_constraintTop_toBottomOf="@+id/btn_signUp">
 
                 <TextView
@@ -129,6 +129,45 @@
                     android:background="@color/greenLight" />
 
             </RelativeLayout>
+
+            <TableRow
+                android:id="@+id/tableRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_marginBottom="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+                <ImageView
+                    android:id="@+id/imgViewFb"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@drawable/fb_icon" />
+
+                <ImageView
+                    android:id="@+id/imgViewGmail"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/google_icon"
+                    android:layout_marginRight="10dp"/>
+
+                <ImageView
+                    android:id="@+id/imgViewLinkedIn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/linkedin_icon"
+                    android:layout_marginRight="10dp"/>
+
+                <ImageView
+                    android:id="@+id/imgViewMobile"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/fb_icon" />
+            </TableRow>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
