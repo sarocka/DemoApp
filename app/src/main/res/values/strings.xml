@@ -3,4 +3,14 @@
     <string name="title_front">Lorem ipsum dorom sit amet.</string>
     <string name="subtitle_front">Quis ipsum suspendisse ultrices \n
     gravida, risus commodo viverra.</string>
+
+    <string-array name="productNames" id="productNames">
+        <item>Vežbe \n disanja</item>
+        <item>Meditacija</item>
+        <item>Problem sa \n spavanjem</item>
+        <item>Zakaži \n terapeuta</item>
+        <item>Pozovi \n psihologa</item>
+        <item>Pozovi \n pravnu pomoć</item>
+        <item>Pitaj \n psihologa</item>
+    </string-array>
 </resources>
