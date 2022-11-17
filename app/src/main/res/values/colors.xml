@@ -10,13 +10,4 @@
     <color name="greenLight">#6AA9A1</color>
     <color name="greenDark">#3E7973</color>
 
-    <color-array name="productColors" id="productColors">
-        <item name="yellow">#FFFF00</item>
-        <item>Meditacija</item>
-        <item>Problem sa \n spavanjem</item>
-        <item>Zakaži \n terapeuta</item>
-        <item>Pozovi \n psihologa</item>
-        <item>Pozovi \n pravnu pomoć</item>
-        <item>Pitaj \n psihologa</item>
-    </color-array>
 </resources>
