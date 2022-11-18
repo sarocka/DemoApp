@@ -73,7 +73,6 @@ class ProductAdapter (context: Context) : RecyclerView.Adapter<ProductAdapter.Vi
         val images= mutableListOf<Int>(imgView1,imgView2, imgView3, imgView4, imgView5, imgView6, imgView7)
 
         return images
-
     }
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var product_image: ImageView = itemView.findViewById(R.id.productImg)

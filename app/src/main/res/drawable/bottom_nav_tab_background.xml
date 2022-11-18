@@ -1,11 +1,12 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-<!--this is for the indicator-->
+<!--indicator in the bottom navigation-->
     <item android:state_checked="true">
         <layer-list>
             <item android:gravity="top">
                 <shape android:shape="rectangle">
-                    <size android:height="4dp" />
-                    <solid android:color="@color/greenDark" />
+                    <size android:height="4dp"/>
+                    <size android:width="8dp"/>
+                    <solid android:color="@color/greenDark"/>
                 </shape>
             </item>
         </layer-list>
