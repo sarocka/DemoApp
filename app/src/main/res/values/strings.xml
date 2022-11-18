@@ -1,9 +1,11 @@
 <resources>
+<!--    artboard1-->
     <string name="app_name">DemoApp</string>
     <string name="title_front">Lorem ipsum dorom sit amet.</string>
     <string name="subtitle_front">Quis ipsum suspendisse ultrices \n
     gravida, risus commodo viverra.</string>
 
+    <!--    artboard2-->
     <string-array name="productNames" id="productNames">
         <item>Vežbe\ndisanja</item>
         <item>Meditacija</item>
@@ -13,4 +15,12 @@
         <item>Pozovi\npravnu pomoć</item>
         <item>Pitaj\npsihologa</item>
     </string-array>
+
+    <string name="korisnickoIme">Korisničko ime</string>
+    <string name="datum">Petak, 15.april, 2022</string>
+    <string name="dobroJutro">Dobro jutro</string>
+    <string name="loremIpsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur\n
+        non felis eros. Praesent ac diam efficitur, rhoncus erat eu, interdum\n
+        mauris. Cras auctor magna erat, in lacinia nisl finibus ac.</string>
+
 </resources>
