@@ -19,8 +19,8 @@
     <string name="korisnickoIme">Korisničko ime</string>
     <string name="datum">Petak, 15.april, 2022</string>
     <string name="dobroJutro">Dobro jutro</string>
-    <string name="loremIpsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur\n
-        non felis eros. Praesent ac diam efficitur, rhoncus erat eu, interdum\n
-        mauris. Cras auctor magna erat, in lacinia nisl finibus ac.</string>
+    <string name="loremIpsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+        non felis eros. Praesent ac diam efficitur, rhoncus erat eu, interdum
+        mauris. Cras\nauctor magna erat, in lacinia nisl finibus ac.</string>
 
 </resources>
