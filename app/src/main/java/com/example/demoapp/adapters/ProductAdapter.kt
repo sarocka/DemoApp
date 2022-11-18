@@ -29,10 +29,12 @@ class ProductAdapter (context: Context) : RecyclerView.Adapter<ProductAdapter.Vi
 
    val cardColors = initListOfColors()
         val images = initListOfImages()
+        val productNames = cont.getResources().getStringArray(R.array.productNames)
         holder.product_name.text = products[position].name
 
         for (product in products){
           holder.cardView.setCardBackgroundColor(cardColors[position])
+            holder.product_name.text= productNames[position]
             holder.product_image.setImageResource(images[position])
         }
     }
@@ -63,17 +65,16 @@ class ProductAdapter (context: Context) : RecyclerView.Adapter<ProductAdapter.Vi
         val imgView1 = R.drawable.vezbe_disanja
         val imgView2 = R.drawable.meditacija
         val imgView3 = R.drawable.problem_sa_spavanjem
-        val imgView4 = R.drawable.zakazi_psihoterapeuta // ovo
-        val imgView5 = R.drawable.pozovi_psihologa //ovo
-        val imgView6 = R.drawable.pozovi_pravnu_pomoc //ovo
-        val imgView7 = R.drawable.pitaj_psihologa//ovo*/
+        val imgView4 = R.drawable.zakazi_psihoterapeuta
+        val imgView5 = R.drawable.pozovi_psihologa
+        val imgView6 = R.drawable.pozovi_pravnu_pomoc
+        val imgView7 = R.drawable.pitaj_psihologa
 
         val images= mutableListOf<Int>(imgView1,imgView2, imgView3, imgView4, imgView5, imgView6, imgView7)
 
         return images
 
     }
-
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var product_image: ImageView = itemView.findViewById(R.id.productImg)
         var product_name : TextView = itemView.findViewById(R.id.productName)

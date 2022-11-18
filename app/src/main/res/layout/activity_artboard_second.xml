@@ -20,13 +20,50 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv">
+        app:layout_constraintTop_toBottomOf="@id/tv"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigation">
     </androidx.recyclerview.widget.RecyclerView>
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:itemHorizontalTranslationEnabled="false"
+        app:itemPaddingTop="20dp"
+        app:labelVisibilityMode="labeled"
+        android:background="@color/bottomBar"
+        app:itemBackground="@drawable/bottom_nav_tab_background"
+        app:itemIconTint="@color/greenDark"
+        app:itemTextColor="@color/greenDark"
+        app:menu="@menu/bottom_navigation">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <!--<nl.joery.animatedbottombar.AnimatedBottomBar
+        android:id="@+id/bottomNavigation"
+        android:background="@color/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:abb_indicatorAppearance="round"
+        app:abb_indicatorMargin="20dp"
+        app:abb_indicatorHeight="4dp"
+        app:abb_indicatorColor="@color/greenDark"
+        app:abb_tabs="@menu/bottom_navigation"
+        app:abb_selectedIndex="2"
+        app:abb_tabColor="@color/greenDark"
+        app:abb_tabColorSelected="@color/greenDark"
+        app:layout_constraintTop_toBottomOf="@id/recyclerView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+-->
 </androidx.constraintlayout.widget.ConstraintLayout>

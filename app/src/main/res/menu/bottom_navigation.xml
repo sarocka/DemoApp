@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bottomBar"
+    android:padding="10dp">
+
+
+    <item
+        android:id="@+id/dnevnik"
+        android:title="Dnevnik"
+        android:icon="@drawable/dnevnik"
+        android:iconTint="@color/greenDark"
+
+        >
+
+    </item>
+
+    <item
+        android:id="@+id/kartice"
+        android:icon="@drawable/kartice"
+        android:title="Kartice"
+        android:iconTint="@color/greenDark">
+    </item>
+
+    <item
+        android:id="@+id/istrazi"
+        android:icon="@drawable/istrazi"
+        android:title="Istraži"
+        android:iconTint="@color/greenDark"
+        >
+    </item>
+
+    <item
+        android:id="@+id/odigos"
+        android:icon="@drawable/odigos"
+        android:title="Odigos"
+        android:iconTint="@color/greenDark">
+    </item>
+
+    <item
+        android:id="@+id/tekstovi"
+        android:icon="@drawable/tekstovi"
+        android:title="Tekstovi"
+        android:iconTint="@color/greenDark">
+    </item>
+
+</menu>
