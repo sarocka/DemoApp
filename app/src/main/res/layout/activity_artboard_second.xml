@@ -27,24 +27,25 @@
             android:src="@drawable/user"
             app:layout_constraintStart_toEndOf="@id/korisnickoIme"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/dobroJutro">
         </ImageView>
 
     <TextView
         android:id="@+id/korisnickoIme"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/korisnickoIme"
         android:textStyle="bold"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@id/datum"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/userImg"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></TextView>
 
     <TextView
         android:id="@+id/datum"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/datum"
         android:layout_marginBottom="30dp"
