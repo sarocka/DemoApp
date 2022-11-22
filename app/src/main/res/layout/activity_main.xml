@@ -66,7 +66,7 @@
 
             <Button
                 android:id="@+id/btn_signIn"
-                android:layout_width="200dp"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:backgroundTint="@color/greenLight"
@@ -79,7 +79,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_signUp"
-                android:layout_width="200dp"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="30dp"
                 android:backgroundTint="@color/white"
