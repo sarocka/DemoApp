@@ -45,6 +45,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
                 android:layout_marginBottom="10dp"
+                android:textStyle="bold"
                 android:text="@string/title_front"
                 android:textColor="@color/greenDark"
                 app:layout_constraintBottom_toTopOf="@+id/subtitle"
