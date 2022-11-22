@@ -1,5 +1,5 @@
 <resources>
-<!--    artboard1-->
+    <!--    artboard1-->
     <string name="app_name">DemoApp</string>
     <string name="title_front">Lorem ipsum dorom sit amet.</string>
     <string name="subtitle_front">Quis ipsum suspendisse ultrices \n

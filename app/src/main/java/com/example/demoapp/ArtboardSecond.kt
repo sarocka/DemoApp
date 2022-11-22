@@ -1,5 +1,6 @@
 package com.example.demoapp
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
@@ -56,6 +57,11 @@ class ArtboardSecond : AppCompatActivity() {
             product7
         )
         return products
+    }
+
+    fun redirectToArtboardThird() {
+        val intent = Intent(this@ArtboardSecond, ArtboardThird::class.java)
+        startActivity(intent)
     }
 
 }

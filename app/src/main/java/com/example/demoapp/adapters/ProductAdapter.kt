@@ -2,6 +2,7 @@ package com.example.demoapp.adapters
 
 import android.content.Context
 import android.graphics.Color
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,6 +11,7 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.example.demoapp.ArtboardSecond
 import com.example.demoapp.R
 import com.example.demoapp.model.Product
 
@@ -78,5 +80,15 @@ class ProductAdapter (context: Context) : RecyclerView.Adapter<ProductAdapter.Vi
         var product_image: ImageView = itemView.findViewById(R.id.productImg)
         var product_name : TextView = itemView.findViewById(R.id.productName)
         var cardView: CardView = itemView.findViewById(R.id.cardViewA2)
+
+        val productNames = cont.getResources().getStringArray(R.array.productNames)
+
+        init {
+            itemView.setOnClickListener {
+                if (productNames[position].equals("Vežbe\ndisanja")) {
+                    (cont as ArtboardSecond).redirectToArtboardThird()
+                }
+            }
+        }
     }
 }
