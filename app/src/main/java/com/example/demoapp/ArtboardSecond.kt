@@ -58,7 +58,6 @@ class ArtboardSecond : AppCompatActivity() {
         )
         return products
     }
-
     fun redirectToArtboardThird() {
         val intent = Intent(this@ArtboardSecond, ArtboardThird::class.java)
         startActivity(intent)
