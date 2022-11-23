@@ -23,4 +23,14 @@
         non felis eros. Praesent ac diam efficitur, rhoncus erat eu, interdum
         mauris. Cras\nauctor magna erat, in lacinia nisl finibus ac.</string>
 
+    <!--    artboard3-->
+    <string-array name="smanjiLista" id="smanjiLista">
+        <item>Smanji anksioznost</item>
+        <item>Smanji bes</item>
+        <item>Smanji iritaciju</item>
+        <item>Smanji tugu</item>
+        <item>Smanji strah</item>
+        <item>Smanji brigu</item>
+    </string-array>
+
 </resources>
