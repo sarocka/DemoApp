@@ -13,6 +13,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.os.persistableBundleOf
 import androidx.recyclerview.widget.RecyclerView
 import com.example.demoapp.ArtboardSecond
+import com.example.demoapp.ArtboardThird
 import com.example.demoapp.R
 import com.example.demoapp.model.Product
 import com.example.demoapp.model.Smanji
@@ -33,7 +34,6 @@ class SmanjiAdapter (context: Context) : RecyclerView.Adapter<SmanjiAdapter.View
 
         val images = initListOfImages()
         val listaNaslova = cont.getResources().getStringArray(R.array.smanjiLista)
-     //   holder.product_name.text = kartice[position].name
 
        for (kartica in kartice){
           holder.naslov.text=listaNaslova[position]
@@ -66,6 +66,15 @@ class SmanjiAdapter (context: Context) : RecyclerView.Adapter<SmanjiAdapter.View
         var naslov: TextView = itemView.findViewById(R.id.naslov)
         var opis : TextView = itemView.findViewById(R.id.opis)
         var slika : ImageView = itemView.findViewById(R.id.imageA3)
+
+        init {
+            val listaNaslova = cont.getResources().getStringArray(R.array.smanjiLista)
+            itemView.setOnClickListener {
+                if (listaNaslova[position].equals("Smanji anksioznost")){
+                    (cont as ArtboardThird).redirectToArtboardFourth()
+                }
+            }
+        }
 
 
     }

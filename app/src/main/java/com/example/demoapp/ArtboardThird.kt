@@ -1,5 +1,6 @@
 package com.example.demoapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
@@ -46,5 +47,10 @@ class ArtboardThird : AppCompatActivity() {
             kartica6
         )
         return kartice
+    }
+
+    fun redirectToArtboardFourth() {
+        val intent=Intent(this@ArtboardThird,ArtboardFourth::class.java)
+        startActivity(intent)
     }
 }

@@ -32,5 +32,5 @@
         <item>Smanji strah</item>
         <item>Smanji brigu</item>
     </string-array>
-
+    <string name="opisA3">Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit.</string>
 </resources>
