@@ -63,8 +63,8 @@ class SmanjiAdapter (context: Context) : RecyclerView.Adapter<SmanjiAdapter.View
         return images
     }
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var naslov: TextView = itemView.findViewById(R.id.naslov)
-        var opis : TextView = itemView.findViewById(R.id.opis)
+        var naslov: TextView = itemView.findViewById(R.id.naslovA3)
+        var opis : TextView = itemView.findViewById(R.id.opisA3)
         var slika : ImageView = itemView.findViewById(R.id.imageA3)
 
         init {
