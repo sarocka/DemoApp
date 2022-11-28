@@ -20,7 +20,7 @@
             android:exported="false" />
         <activity
             android:name=".ArtboardThird"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".ArtboardSecond"
             android:exported="false"
