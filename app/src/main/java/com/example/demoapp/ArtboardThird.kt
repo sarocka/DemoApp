@@ -29,6 +29,8 @@ class ArtboardThird : AppCompatActivity() {
         recyclerView = findViewById<RecyclerView>(R.id.recyclerViewA3)
         recyclerView.adapter = smanjiAdapter
         recyclerView.layoutManager = LinearLayoutManager(this)
+
+        //textview vezbe disanja
     }
     fun initializeListOfCards(): MutableList<Smanji> {
         val kartica1 = Smanji()
