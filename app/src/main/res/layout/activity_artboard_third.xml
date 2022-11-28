@@ -7,8 +7,27 @@
     tools:context=".ArtboardThird"
     android:background="@drawable/background">
 
+    <include
+        layout="@layout/header"
+        android:id="@+id/headerA3"
+        android:layout_marginTop="17dp"
+        app:layout_constraintBottom_toTopOf="@id/recyclerViewA3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    </include>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewA3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerA3"
+        app:layout_constraintBottom_toBottomOf="parent">
 
+    </androidx.recyclerview.widget.RecyclerView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
