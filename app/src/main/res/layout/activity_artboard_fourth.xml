@@ -72,13 +72,16 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_zapocniVezbu"
-            android:layout_width="250dp"
+            android:padding="15dp"
+            android:layout_width="325dp"
             android:layout_height="wrap_content"
             android:layout_margin="60dp"
             android:backgroundTint="@color/cardArtboard3"
+            app:cornerRadius="5dp"
             android:text="Započni vežbu"
             android:textAllCaps="false"
             android:textColor="@color/white"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.484"
             app:layout_constraintStart_toStartOf="parent"
